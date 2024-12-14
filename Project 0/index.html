@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!--Esto indica el tipo de documento, siempre HTML-->
+<html> <!--Etiqueta HTML, siempre abre y cierra todo el código-->
+<head> <!--Etiqueta de head, la cabecera de la página-->
+    <title>Mi web</title> <!--Lo que aparece en la ventana del navegador-->
+    <!--dentro de style definimos el estilo css de algunos objetos dentro. con las llaves lo que decimos es que lo que haya dentro, se aplica a lo que esta antes de las llaves-->
+    <style>
+        table, th, td { 
+            border: 1px solid black;
+        } 
+    </style>
+</head>
+<body> <!--El cuerpo de la web-->
+
+    <!--Tablas-->
+    <table>
+
+        <thead> <!--cabecera de la tabla-->
+            <tr> <!--table row-->
+                <th>Precio</th> <!-- esto es como el nombre de las columnas -->
+                <th>XD</th>
+            </tr>
+        </thead>
+
+        <!--cuerpo de la tabla-->
+        <tbody>
+            <tr>
+                <td>messigdhfjkasgdhjfkasdghfjagsdjfk</td> <!-- esto es el contenido de las columnas -->
+                <td>ronaldo</td>
+            </tr>
+        </tbody>
+
+        <!--pie de la tabla XD-->
+        <tfoot>
+            <tr>
+                <td>messigdhfjkasgdhjfkasdghfjagsdjfk</td> <!-- esto es el contenido de las columnas -->
+                <td>ronaldo</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li> <!--li es list item-->
+        <li>Elemento 2</li> <!--li es list item-->
+        <li>Elemento 3</li> <!--li es list item-->
+    </ul>
+
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value="2">Elemento 1</li> <!--li es list item, con value, le dices donde quieres que empiece-->
+        <li>Elemento 2</li> <!--li es list item-->
+        <li>Elemento 3</li> <!--li es list item-->
+        <li>
+            <ol>
+                <li style="list-style-type:lower-roman;">Elemento 1</li> <!--li es list item-->
+                <li>Elemento 2</li> <!--li es list item-->
+                <li>Elemento 3</li> <!--li es list item-->
+            </ol>
+        </li>
+    </ol>
+
+
+    <form action="/formulario.php" method="get" ><!--action manda el paquete con el form con los datos a donde sea. El method nos dice la forma de enviar los datos. Con un get obtenemos un recurso con esas caracteristicas, con post, los enviamos al servidor "action"-->
+        <label for = "nombre">Nombre</label> <!--Etiqueta que sirve para saber que nos estamos guardando. Con for le damos foco a una id.-->
+        <input value = "hola" type="text" id = "nombre" name="nombre" placeholder="Nombre"/> <!--Input de texto. Le ponemos ID para poder hacerle foco con for y name sirve para que cuando se rellene el formulario, el servidor recibe un diccionario clave valor del formulario, name es la clave y valor es lo que haya puesto en el formulario. Placeholder es para escribir algo dentro.-->
+        <!--Con type tenemos text (por defecto), email, password, radio, checkbox o file. Value da valores por defecto.-->
+        <br>
+        <label for = "apellido"> Apellido </label>
+        <input value = "hola2" type="text" id="apellido" name="apellido" placeholder="apellido" />
+        <br>
+        <textarea rows="10" cols="100" id="comentario" placeholder="Ingrea tus comentarios">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, dolores!</textarea> <!--Lo que pongas dentro, estará por defecto en el comentario.-->
+    <!--<input type="submit"/> Con esta etiqueta hacemos el envio al action usando el method. -->
+    <button type = "submit"> <img width="100" src="images/pepe-sad-working-at-mcdonalds-flipping-burgers-812458382.jpg"/> Enviar</button> <!--con type button, es un objeto boton para darle uso con JS. Submit envía formulario, menu, reset deja los valores por defecto.-->
+
+    </form><!--Formularios-->
+    <h1>Mi primer heading</h1> <!--Headings son títulos o rótulos de la web. Hay de 1 hasta 6 y el navegador los usa para leer la página así que no usar a la ligera.-->
+    <h2>Mi segundo heading</h2>
+    <p>Hola buenas panchitos</p> <!--Etiqueta de párrafo, se usa para poner texto.-->
+    <hr> <!--Linea horizontal separadora.-->
+    <p>Otro textito</p> <!--Saltos de linea-->
+    <p> HIASOASOALSALLLA <span style="color:aqua">asgdhjasgdja </span> EEE </p> <!--Etiqueta para envolver parte de un texto y poder referenciarlo. Sirve con CSS por ejemplo.-->
+    <p>Hola, esto es un <br> salto de linea</p> <!--Etiqueta de salto de linea.-->
+    <a target= "_blank" href="https://www.google.com">Ir a google XD</a> <!--Etiqueta de hipervínculo, enlaces. href es para poner el enlace como tal. con target _blank se abre en nueva pestaña.-->
+    <img src = "images/pepe-sad-working-at-mcdonalds-flipping-burgers-812458382.jpg" width="400" height="400"/> <!--Se cierra en si misma, con el / -->
+
+</body>
+</html>
