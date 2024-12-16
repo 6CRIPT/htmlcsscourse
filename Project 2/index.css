@@ -1,0 +1,65 @@
+body{
+    font-family: sans-serif;
+    background: aquamarine;
+}
+
+.imagenes-container{
+    margin: 100px auto;
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.imagenes-container .imagen{
+    position: relative; /*para que se ajuste en base a su posicion original normal, la que le corresponde, con absolute lo hace respecto del container, como si fuese el unico elemento. para probar pon 3 cuadrados en una fila en un div y prueba, con absolute, se monta encima del otro.*/
+    margin-right: 20px;
+    display: inline-flex;
+    flex-direction: column-reverse; /*una columna por cada .imagen, con reverse hacemos que el nombre salga antes que la imagen :D*/
+}
+
+.imagenes-container .imagen img { /*modificamos las imagenes dentro de las clases imagen dentro del container y modificamos:*/
+    width: 100px; /*ancho*/
+    height: 100px; /*alto*/
+}
+
+.imagenes-container .imagen .nombre {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    display: none;
+    min-width: 100px;
+    width:150px;
+    padding: 10px 15px;
+}
+
+.imagenes-container .imagen:hover .nombre{ /*aqui hacemos que cuando se pase el raton POR ENCIMA DE LA IMAGEN (.imagen) lo que vaya entre llaves se aplique al .nombre!!*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes-container .imagen .nombre .text {
+    display: inline-block;
+    text-overflow: ellipsis;/*con textos enormes, pues metemos ...*/
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 150px; /*cuando el overflow se sale de aqui, pone 3 puntos con ellipsis*/
+    text-align: center;
+    box-sizing: border-box; /*esto hace que la caja del texto adapte su tamaño al de su container, en este caso .nombre que es un span*/
+}
+
+.imagenes-container .imagen .nombre::before{
+    /* permite insertar contenido antes de un elemento HTML sin modificar el HTML directamente.*/
+    content: "";
+    position: absolute; /*para que se localice de acuerdo a .imagen que es su padre.*/
+    width: 1px;
+    height: 1px;
+    left: 40%;
+    bottom: -20px;
+    /*la siguiente parafernalia sirve para hacer un triangulo con un bloque cuadrado, quitando el color de todos los lados menos del top*/
+    border-top: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
