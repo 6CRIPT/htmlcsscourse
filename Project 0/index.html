@@ -8,6 +8,8 @@
             border: 1px solid black;
         } 
     </style>
+
+    <link rel="stylesheet" href="index.css">
 </head>
 <body> <!--El cuerpo de la web-->
 
@@ -75,15 +77,23 @@
     <button type = "submit"> <img width="100" src="images/pepe-sad-working-at-mcdonalds-flipping-burgers-812458382.jpg"/> Enviar</button> <!--con type button, es un objeto boton para darle uso con JS. Submit envía formulario, menu, reset deja los valores por defecto.-->
 
     </form><!--Formularios-->
-    <h1>Mi primer heading</h1> <!--Headings son títulos o rótulos de la web. Hay de 1 hasta 6 y el navegador los usa para leer la página así que no usar a la ligera.-->
-    <h2>Mi segundo heading</h2>
-    <p>Hola buenas panchitos</p> <!--Etiqueta de párrafo, se usa para poner texto.-->
+    
+    <div> <!--Sirven para agrupar elementos, es un contenedor.-->
+        <p>Hola buenas panchitos</p> <!--Etiqueta de párrafo, se usa para poner texto.-->
+        <div class ="messi"> <!--con class le damos un nombre para referenciarlo en el css. se referencia con un .nombre-->
+            <h1>Mi primer heading</h1> <!--Headings son títulos o rótulos de la web. Hay de 1 hasta 6 y el navegador los usa para leer la página así que no usar a la ligera.-->
+            <h2>Mi segundo heading</h2>
+        </div>
+    </div>
+
+    <div class="padre"> <!--Si pones .algo y das tab te crea el div directamente con ese algo como nombre--> </div>
+
     <hr> <!--Linea horizontal separadora.-->
     <p>Otro textito</p> <!--Saltos de linea-->
     <p> HIASOASOALSALLLA <span style="color:aqua">asgdhjasgdja </span> EEE </p> <!--Etiqueta para envolver parte de un texto y poder referenciarlo. Sirve con CSS por ejemplo.-->
     <p>Hola, esto es un <br> salto de linea</p> <!--Etiqueta de salto de linea.-->
-    <a target= "_blank" href="https://www.google.com">Ir a google XD</a> <!--Etiqueta de hipervínculo, enlaces. href es para poner el enlace como tal. con target _blank se abre en nueva pestaña.-->
     <img src = "images/pepe-sad-working-at-mcdonalds-flipping-burgers-812458382.jpg" width="400" height="400"/> <!--Se cierra en si misma, con el / -->
-
+    <br>
+    <a target= "_blank" href="https://www.google.com">Ir a google XD</a> <!--Etiqueta de hipervínculo, enlaces. href es para poner el enlace como tal. con target _blank se abre en nueva pestaña.-->
 </body>
 </html>

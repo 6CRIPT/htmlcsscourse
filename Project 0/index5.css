@@ -1,0 +1,15 @@
+.padre{
+    background: purple;
+    height: 200px;
+    width: 200px;
+    position: fixed; /*fija el elemento donde esté si bajas ahí se queda.*/
+    left: 500px; /* lo mueve tantos pixeles desde la izda y asi con todas las direcciones.*/
+    bottom: 0px;
+}
+
+.uno{
+    background: blue;
+    height: 300px;
+    width: 300px;
+
+}

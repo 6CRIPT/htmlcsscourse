@@ -1,0 +1,26 @@
+body{ /* aqui lo que afecte a todo el body*/
+    margin:0;
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box; /*importante: si está puesta, esta opcion hace que el padding y margin se incluyan en el alto y ancho de los elementos.*/
+}
+
+.padre {
+    background: red;
+    height: 300px;
+    width: 300px;
+    margin: 200px; /* separa de los bordes de arriba y izquierda los pixeles indicadas.*/
+    margin-top: 15px;
+    margin-left:100px; /* estos margin-top-left-right-bottom sirven para solo afectar a un borde y se sobreescriben al margin normal grande. es decir si pones uno de estos el margin general se ignora para el borde especificado.*/
+    padding: 30px; /*controla el espacio entre un elemento y su borde 30 px separa realmente 30 px del borde de la pagina al padre.*/
+    /*padding rellena la diferencia y margin mete un margen externo.*/
+}
+
+.hijo {
+    background: blue;
+    height: 100px;
+    width: 100px;
+    margin: 350px; /* por alguna razon afecta tambien al padre XD y encima ni sale */
+    /* se ve que separa al hijo respecto del padre y al padre respecto de su padre, que es la pagina web main.*/
+}
+

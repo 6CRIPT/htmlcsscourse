@@ -1,0 +1,35 @@
+/*COMO CENTRAR UN DIV XD*/
+
+body{ /* aqui lo que afecte a todo el body*/
+    margin:0;
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box; /*importante: si está puesta, esta opcion hace que el padding y margin se incluyan en el alto y ancho de los elementos.*/
+}
+
+.padre{
+    /* para ver todo --> https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*expandimos el div al 100% de la pantalla.*/
+
+}
+
+.uno{
+    background: purple;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center; /*esto le mete un margen en el eje x*/
+    align-items: center; /*esto le mete un margen en eje y*/
+    border-radius: 15px;
+}
+.dos{
+    background: blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px; 
+
+}

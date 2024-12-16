@@ -1,0 +1,15 @@
+h1 { /* la sintaxis es coger el tipo de etiqueta dos llaves, y lo que quieras hacer para todas esas etiquetas dentro. */
+    color: red;
+}
+
+p{
+    color: blueviolet
+}
+
+div{ /* aqui cambiamos todo lo que esté dentro del div en el html, menos lo que tenga un cambio de estilo especifico. */
+    color: blue; /* como el h1 tiene un color propio definido, no le afetca pese a estar dentro. Lo mismo para el párrafo.*/
+}
+
+.messi{
+    color: green;
+}

@@ -1,0 +1,46 @@
+body{ /* aqui lo que afecte a todo el body*/
+    margin:0;
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box; /*importante: si está puesta, esta opcion hace que el padding y margin se incluyan en el alto y ancho de los elementos.*/
+}
+
+.padre{
+    display: flex; /* esto hace que el container y sus hijos directos sean flexibles*/
+    flex-direction: row; /* row por defecto, es al reves, si pones row, cada div hijo es una columna y al reves. vaya si pones row, los pone todos en una misma fila.*/
+    /*tambien puedes poner row/column-reverse que los pone al reves*/
+    justify-content: space-evenly; /*para justificar el contenido*/
+
+    align-items: center; /*para alinear a los hijos*/
+
+    height: 100vh; /*con vh lo que haces es ajustar a lo que sea la altura del dispositivo, de la pantalla. 100 es un porcentaje es decir invades el 100% de la pantalla (vh) con este container (div) -> responsive.*/
+
+    flex-wrap: wrap; /*esto basicamente hace la web responsive, en cuanto en la pantalla no cabe un elemento lo pone en la siguiente fila o columna*/
+
+    gap: 10px; /*es el espacio entre todos los hijos (elementos) del div*/
+
+    /* para ver todo --> https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    background: black;
+}
+
+.uno{
+    background: red;
+    height: 500px;
+    width: 500px;
+    border-radius: 15px; /*redondea los bordes.*/
+}
+.dos{
+    background: blue;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px; 
+
+}
+
+.tres{
+    background: green;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+
+}

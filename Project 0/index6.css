@@ -1,0 +1,20 @@
+.padre{
+    background: purple;
+    height: 200px;
+    width: 200px;
+    /*con la posicion relativa mueves de forma relativa desde su posicion original.*/
+    /*con asbolute mueves directamente con referencia del padre.*/
+    position: relative; /*con relative mantienes el flujo del documento xd*/
+    left: 200px;
+    top:200px;
+}
+
+.uno{
+    background: blue;
+    height: 50px;
+    width: 50px;
+
+    position: absolute; /*si su padre no tuviese un position, se iria al superior, su abuelo, en este caso body*/
+    left: 20px;
+    top: 20px;
+}
