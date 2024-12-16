@@ -1,0 +1,57 @@
+/* RECUERDA QUE CENTRAR COSAS SIEMPRE AFECTA AL ELEMENTO AL QUE SE LO APLICAS Y A SU HIJO INMEDIATO, SI EL HIJO INMEDIATO ES UN CONTAINER CENTRA EL CONTAINER PERO NO SU CONTENIDO.*/
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    min-height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between; /*esto mete space entre los bloques (hijos) del contenedor header como en este caso tenemos 2, entonces no hace más que dejar uno a la izda y otro a la dcha*/
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h2:hover {
+    color:red;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{ /*caracteristica de css de cuando pasas el raton por encima*/
+    color:blueviolet; 
+}
+
+@media (max-width:680px){ /* esto es una funcion normal, basicamente cuando llega a 680 px o menos aplicas los cambios que hay dentro. Esto se hace para hacer la web más responsive a dispositivos móviles.*/
+    header{
+        flex-direction: column; /*en este caso le decimos que el flex direction pase de filas a columnas, entonces teniamos antes una fila y ahora una columna.*/
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
