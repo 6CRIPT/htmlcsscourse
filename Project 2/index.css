@@ -4,32 +4,41 @@ body{
 }
 
 .imagenes-container{
-    margin: 100px auto;
-    width: 500px;
     display: flex;
-    align-items: center;
+    align-items: center ;
+    justify-content: center;
+    height: 100vh;
 }
 
 .imagenes-container .imagen{
     position: relative; /*para que se ajuste en base a su posicion original normal, la que le corresponde, con absolute lo hace respecto del container, como si fuese el unico elemento. para probar pon 3 cuadrados en una fila en un div y prueba, con absolute, se monta encima del otro.*/
-    margin-right: 20px;
     display: inline-flex;
-    flex-direction: column-reverse; /*una columna por cada .imagen, con reverse hacemos que el nombre salga antes que la imagen :D*/
+    flex-direction: column; /*una columna por cada .imagen, con reverse hacemos que el nombre salga antes que la imagen :D*/
+    
 }
 
 .imagenes-container .imagen img { /*modificamos las imagenes dentro de las clases imagen dentro del container y modificamos:*/
     width: 100px; /*ancho*/
     height: 100px; /*alto*/
+    transition: transform 0.4s; /*esto es para hacer la transiccion del hover en 0.3 segundos, quita brusquedad.*/
 }
 
-.imagenes-container .imagen .nombre {
+.imagenes-container .imagen:hover img { /*modificamos las imagenes dentro de las clases imagen dentro del container y modificamos:*/
+    transform: translateY(-25px);
+}
+
+.imagenes-container .imagen .nombre{
+    position: absolute;
     background-color: black;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     display: none;
     min-width: 100px;
-    width:150px;
+    width: 150px;
+    top: -70px;
+    left: -30px;
     padding: 10px 15px;
+    justify-content: center;
 }
 
 .imagenes-container .imagen:hover .nombre{ /*aqui hacemos que cuando se pase el raton POR ENCIMA DE LA IMAGEN (.imagen) lo que vaya entre llaves se aplique al .nombre!!*/
@@ -62,4 +71,11 @@ body{
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
+}
+
+@media (max-width:680px) {
+    .imagenes-container{
+        flex-direction: column; /*para moviles (680px) lo pasamos a columna*/
+        height: 180vh; /*esto hace que cuando estes en movil la altura del container aumente un 80% del maximo, es decir por encima de la primera imagen hay un 40% de containter vacio, y abajo otro 40%, para que no le corte la cabeza por la mitad xd*/
+    }
 }
