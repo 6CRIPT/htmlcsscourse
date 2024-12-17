@@ -23,6 +23,17 @@ body{
     box-shadow: 0px 2px 5px rgb(41, 40, 40, 0.2); /*rgb y alpha que es como de intenso se ve.*/
 }
 
+/* Estiliza el placeholder para que sea un gris claro */
+.input::placeholder{
+    color: #a9a9a9;         /* Gris claro */
+    font-style: italic;     /* Opcional: hace que el texto sea cursivo */
+}
+
+  /* Hace que el placeholder desaparezca cuando el input tiene el foco */
+.input:focus-within::placeholder {
+    color: transparent;     /* Hace el placeholder invisible al enfocar */
+}
+
 .input{
     border: none; /*para quitar el borde*/
     outline:none;
