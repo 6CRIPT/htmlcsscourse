@@ -1,0 +1,80 @@
+:root{ //Esto aplica a todo el documento, ideal para crear variables
+    --color1: #f8b78b; //una variable
+    --color2: #fcb173;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //esto hace que el rem sea de 10.
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--color1);
+    font-family: sans-serif;
+    background-image: url(../images/fondoTop.svg), url(../images/fondoBotton.svg); // esto se pone para cargar los dos fondos del tiron.
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+
+}
+
+.container{
+    display: flex; //como solo hay un article, pues lo pone en una unica fila todo a la izda. si hubiese más, pondría más filas
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: white;
+    width: 328px;
+    border-radius: 16px;
+    overflow: hidden; //para que si se sale algo de tamaño, se ignore y se aplique todo bien
+    box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.5);
+
+    &-header{ //con esto del scss puedes como enlazar las clases hijo. para ello es necesario poner el -
+        width: 100%;
+        display: block; //ocupa todo el espacio vacio
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center; //CLAVE para que todo este en el centro y el circulo quede bien
+        border-bottom: 1px solid var(--color2);
+        &-contentimg{
+            border: solid 5px #F67C55;
+            border-radius: 50%;
+            background-color: #FCD3C6;
+            box-shadow: 0px -10px 20px #f67c55;
+            margin-top: calc(-50px -8px); //para separar o juntar el circulo de la cabecera
+            &-img{
+                padding: 20px; //metemos padding para espaciar.
+            }
+        }
+        &-title{
+            margin-top: 2rem;
+            font-size: 3rem;
+            span{
+                color: var(--color2);
+            }
+        }
+    }
+    &-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &-poder{
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+@media(max-width: 400px){
+
+}
