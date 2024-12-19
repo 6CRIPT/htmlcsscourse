@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+body{
+    height: 100%;
+    width: 100%;
+}
+
 .main{
     position: relative; // pq es el principal ? XD el pancho se explica fatal
     min-height: 100vh;
@@ -132,8 +137,11 @@
 }
 
 @media (max-width: 680px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
     .main{
-        padding: 20px;
         .content{
             .text{
                 h2{
