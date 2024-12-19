@@ -5,14 +5,18 @@
   font-family: sans-serif;
 }
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .main {
   position: relative;
   min-height: 100vh;
+  max-width: 100%;
   background: radial-gradient(#FD4C32, #EC3128);
   display: flex;
   justify-content: center;
@@ -45,7 +49,7 @@ body {
   color: white;
   text-decoration: none;
   margin-left: 40px;
-  font-size: 2em;
+  font-size: 2vw;
 }
 .main header .navigation li a:hover {
   color: black;
@@ -137,6 +141,9 @@ body {
   body {
     height: 100%;
     width: 100%;
+  }
+  .main .content {
+    flex-direction: column;
   }
   .main .content .text h2 {
     margin-top: 40px;

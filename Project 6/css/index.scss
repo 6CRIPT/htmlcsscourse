@@ -5,14 +5,18 @@
     font-family: sans-serif;
 }
 
-body{
-    height: 100%;
-    width: 100%;
+html,body{
+    margin: 0; //CLAVE PARA EVITAR DESBORDAMIENTOS Y BORDES BLANCOS
+    padding: 0; //CLAVE PARA EVITAR DESBORDAMIENTOS Y BORDES BLANCOS
+    height: 100%; //CLAVE PARA EVITAR DESBORDAMIENTOS Y BORDES BLANCOS
+    width: 100%; //CLAVE PARA EVITAR DESBORDAMIENTOS Y BORDES BLANCOS
+    overflow-x: hidden; //CLAVE PARA EVITAR DESBORDAMIENTOS Y BORDES BLANCOS
 }
 
 .main{
     position: relative; // pq es el principal ? XD el pancho se explica fatal
     min-height: 100vh;
+    max-width: 100%; //CLAVE PARA EVITAR DESBORDAMIENTOS Y BORDES BLANCOS
     background: radial-gradient(#FD4C32, #EC3128); //para poner el fondo
     display: flex;
     justify-content: center;
@@ -42,7 +46,7 @@ body{
                     color: white;
                     text-decoration: none;
                     margin-left: 40px;
-                    font-size: 2em;
+                    font-size: 2vw;
                 }
             }
             li a:hover{
@@ -143,6 +147,7 @@ body{
     }
     .main{
         .content{
+            flex-direction: column;
             .text{
                 h2{
                     margin-top: 40px;
