@@ -42,6 +42,7 @@ section{
 .box{
     position: relative;
     min-width: 35%;
+    max-width: 95%;
     height: 100%;
     padding: 1.25rem;
     background: rgba(255, 255, 255, 0.1);
@@ -70,7 +71,7 @@ section{
         &:hover{ //LITERAL CON 3 COSAS TE QUEDA CLEAN
             background: white;
             box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
-            transform: scale(1.15) translateX(30px) translateY(-15px);
+            transform: scale(1.15) translateX(2.5rem) translateY(-15px);
             z-index: 10000;
             .content{
                 .rank{
@@ -124,5 +125,10 @@ section{
                 transition: 0.5s;
             }
         }
+    }
+}
+@media(max-width:600px){
+    .list:hover{
+        max-width: 90%;
     }
 }
