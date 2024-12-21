@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; //cuando los elementos hijos no caben en una linea -> wrap -> saltan a segunda linea
+    height: 100vh;
+    background: #000;
+    width: 100%;
+}
+
+h2{
+    position: relative;
+    padding: 10% ;
+    font-size: 6em;
+    font-weight: 600;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    span{
+        transition: 0.5s;
+    }
+    &:hover{
+        span{
+            color: white;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff ; //CLAVE el efecto de las sombras TOP!!
+            &:nth-child(1){
+                margin-right: 15px;
+                &::after{
+                    content: "";
+                }
+            }
+            &:nth-child(2){
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        display: flex;
+    }
+    h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+}
