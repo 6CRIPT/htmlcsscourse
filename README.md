@@ -34,7 +34,7 @@ Proyecto 15 (Nike drop page):  https://graceful-parfait-f68ed6.netlify.app/
 
 Proyecto 16 (Música): https://tiny-fairy-11e644.netlify.app/
 
-Proyecto 17:
+Proyecto 17 (página de viajes): https://stellular-concha-35228f.netlify.app/
 
 Proyecto 18 (Iconos bonitos + animaciones): https://starlit-llama-b353c0.netlify.app/
 
