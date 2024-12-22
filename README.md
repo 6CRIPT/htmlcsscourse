@@ -34,11 +34,11 @@ Proyecto 15 (Nike drop page):  https://graceful-parfait-f68ed6.netlify.app/
 
 Proyecto 16 (Música): https://tiny-fairy-11e644.netlify.app/
 
-Proyecto 17 (página de viajes): https://stellular-concha-35228f.netlify.app/
+Proyecto 17 (página de viajes, IMPORTANTE!!): https://stellular-concha-35228f.netlify.app/
 
 Proyecto 18 (Iconos bonitos + animaciones): https://starlit-llama-b353c0.netlify.app/
 
-Proyecto 19:
+Proyecto 19 (HOVER CARTAS, IMPORTANTE!!): https://profound-fudge-b70f85.netlify.app/
 
 Proyecto 20 (Nombre animado): https://mellifluous-cassata-dcaaea.netlify.app/
 
