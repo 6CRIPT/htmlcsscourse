@@ -36,7 +36,7 @@ Proyecto 16 (Música): https://tiny-fairy-11e644.netlify.app/
 
 Proyecto 17:
 
-Proyecto 18:
+Proyecto 18 (Iconos bonitos + animaciones): https://starlit-llama-b353c0.netlify.app/
 
 Proyecto 19:
 
