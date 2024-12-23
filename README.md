@@ -42,7 +42,7 @@ Proyecto 19 (HOVER CARTAS, IMPORTANTE!!): https://profound-fudge-b70f85.netlify.
 
 Proyecto 20 (Nombre animado): https://mellifluous-cassata-dcaaea.netlify.app/
 
-Proyecto 21:
+Proyecto 21 (Rotaciones 3D, IMPORTANTE!!): https://nimble-conkies-f49a15.netlify.app/
 
 Proyecto 22:
 
