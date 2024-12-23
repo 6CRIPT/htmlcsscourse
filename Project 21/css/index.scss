@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background: #161623;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; // ESTO HACE QUE AL HACER ANIMACIONES 3D EN LOS HIJOS, SE VEA REALMENTE EN 3D.
+    width: 100%;
+    flex-wrap: wrap;
+
+    .card{
+        position: relative;
+        width: 320px;
+        height: 320px;
+        margin: 20px;
+        transform-style: preserve-3d; //same, las animaciones 3D las pondremos en el hover en este caso
+        border-radius: 15px;
+        overflow: hidden;
+        .box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 0.5s ease-in-out;
+        }
+        &:hover{
+            .box{
+                transform: rotateY(180deg); //ROTACION 3D SOBRE EL EJE Y
+            }
+        }
+        .imgBx{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .contentBx{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #333;
+            transform: rotateY(180deg); //ROTACION 3D SOBRE EL EJE Y
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            backface-visibility: hidden; // PARA OCULTAR LA CARA FRONTAL, ES DECIR EL .contetnBx, que va antes que la imagen. Entonces se oculta pero al hacer la rotación aparece
+            div{
+                transform-style: preserve-3d;
+                transform: translateZ(100px);
+                background: linear-gradient(45deg, #fe0061, #ffeb3b);
+                padding: 20px;
+                margin: 0 30px; // 0 de margen arriba y abajo pero 30 a izda y derecha
+                border-radius: 15px;
+                h2 {
+					font-size: 20px;
+					color: #fff;
+					letter-spacing: 1px;
+					backface-visibility: hidden;
+				}
+                p {
+					font-size: 16px;
+					color: #fff;
+					backface-visibility: hidden;
+				}
+            }
+        }
+    }
+}
