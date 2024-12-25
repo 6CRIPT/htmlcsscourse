@@ -44,7 +44,7 @@ Proyecto 20 (Nombre animado): https://mellifluous-cassata-dcaaea.netlify.app/
 
 Proyecto 21 (Rotaciones 3D, IMPORTANTE!!): https://nimble-conkies-f49a15.netlify.app/
 
-Proyecto 22:
+Proyecto 22 (Preguntas frecuentes, IMPORTANTE!!): https://elegant-peony-50942c.netlify.app/
 
 Proyecto 23:
 
