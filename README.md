@@ -48,7 +48,7 @@ Proyecto 22 (Preguntas frecuentes, IMPORTANTE!!): https://elegant-peony-50942c.n
 
 Proyecto 23 (Botón Café): https://profound-seahorse-eac5d8.netlify.app/
 
-Proyecto 24:
+Proyecto 24 (Portada avatar, busca CLAVE): https://eclectic-tiramisu-0040da.netlify.app/
 
 Proyecto 25:
 
