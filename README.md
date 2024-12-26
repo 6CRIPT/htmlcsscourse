@@ -54,7 +54,7 @@ Proyecto 25 (Skate, MUY CLAVE LA ANIMACION!): https://quiet-cucurucho-d425dd.net
 
 Proyecto 26 (Grid con imagenes, animacion del hover nice): https://bucolic-zabaione-0f4925.netlify.app/
 
-Proyecto 27:
+Proyecto 27 (Grid personas): https://elaborate-lebkuchen-aac2c9.netlify.app/
 
 Proyecto 28:
 
