@@ -52,7 +52,7 @@ Proyecto 24 (Portada avatar, busca CLAVE): https://eclectic-tiramisu-0040da.netl
 
 Proyecto 25 (Skate, MUY CLAVE LA ANIMACION!): https://quiet-cucurucho-d425dd.netlify.app/
 
-Proyecto 26:
+Proyecto 26 (Grid con imagenes, animacion del hover nice): https://bucolic-zabaione-0f4925.netlify.app/
 
 Proyecto 27:
 
