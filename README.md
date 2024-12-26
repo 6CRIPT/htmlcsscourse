@@ -50,7 +50,7 @@ Proyecto 23 (Botón Café): https://profound-seahorse-eac5d8.netlify.app/
 
 Proyecto 24 (Portada avatar, busca CLAVE): https://eclectic-tiramisu-0040da.netlify.app/
 
-Proyecto 25:
+Proyecto 25 (Skate, MUY CLAVE LA ANIMACION!): https://quiet-cucurucho-d425dd.netlify.app/
 
 Proyecto 26:
 
