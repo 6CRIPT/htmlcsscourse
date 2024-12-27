@@ -60,4 +60,4 @@ Proyecto 28 (Compra Rayo McQueen, interesante botones y animación): https://kee
 
 Proyecto 29:
 
-Proyecto 30:
+Proyecto 30 (Carta de precios, CLAVE): https://fabulous-torte-8bcf58.netlify.app/
