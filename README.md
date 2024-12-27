@@ -58,6 +58,6 @@ Proyecto 27 (Grid personas): https://elaborate-lebkuchen-aac2c9.netlify.app/
 
 Proyecto 28 (Compra Rayo McQueen, interesante botones y animación): https://keen-pony-ed9464.netlify.app/
 
-Proyecto 29:
+Proyecto 29 (Barbie page! Probablemente el más completo): https://heartfelt-sherbet-59e756.netlify.app/
 
 Proyecto 30 (Carta de precios, CLAVE): https://fabulous-torte-8bcf58.netlify.app/
