@@ -56,7 +56,7 @@ Proyecto 26 (Grid con imagenes, animacion del hover nice): https://bucolic-zabai
 
 Proyecto 27 (Grid personas): https://elaborate-lebkuchen-aac2c9.netlify.app/
 
-Proyecto 28:
+Proyecto 28 (Compra Rayo McQueen, interesante botones y animación): https://keen-pony-ed9464.netlify.app/
 
 Proyecto 29:
 
